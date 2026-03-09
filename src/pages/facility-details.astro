@@ -1,0 +1,262 @@
+---
+import Main from '../layouts/main.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Main title="Ruang Serbaguna - Rumah Pembelajar Cilangkap">
+  <Navbar activePage="facilities" />
+  <main class="flex-1 max-w-7xl mx-auto w-full px-6 lg:px-20 py-8">
+  <!-- Breadcrumbs -->
+  <nav class="flex items-center gap-2 text-sm text-[#61896b] mb-8">
+  <a class="hover:text-primary" href="/">Home</a>
+  <span class="material-symbols-outlined text-xs">chevron_right</span>
+  <a class="hover:text-primary" href="/facilities">Facilities</a>
+  <span class="material-symbols-outlined text-xs">chevron_right</span>
+  <span class="font-semibold text-[#102215]">Ruang Serbaguna</span>
+  </nav>
+  <!-- Gallery Section -->
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-12">
+  <div class="lg:col-span-3 aspect-[16/9] overflow-hidden rounded-xl bg-gray-200 group relative">
+  <img alt="Main view of Ruang Serbaguna" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Interior spacious modern multi-purpose meeting room with large windows" src="/images/facilities/rs-main.webp"/>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+  <div class="absolute bottom-6 left-6 text-white">
+  <span class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest">Premium Space</span>
+  <h2 class="text-3xl font-bold mt-2">Ruang Serbaguna Cilangkap</h2>
+  </div>
+  </div>
+  <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200">
+  <img alt="Garden view from window" class="w-full h-full object-cover" data-alt="Close up of meeting table with coffee and view to green garden" src="/images/facilities/rs-detail1.webp"/>
+  </div>
+  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200 relative">
+  <img alt="Lounge area" class="w-full h-full object-cover" data-alt="Modern office lounge area with wooden accents" src="/images/facilities/rs-detail2.webp"/>
+  <div class="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer">
+  <span class="text-white font-bold">+12 Foto</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Content Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+  <!-- Left Column: Details -->
+  <div class="lg:col-span-2 space-y-12">
+  <!-- Description -->
+  <section>
+  <h3 class="text-2xl font-bold text-[#102215] mb-4">Tentang Ruangan</h3>
+  <p class="text-[#61896b] leading-relaxed text-lg">
+                              Suasana <span class="text-primary font-semibold italic">'homey'</span> yang asri namun tetap profesional untuk produktivitas maksimal. Ruangan ini dirancang dengan konsep semi-outdoor yang menyatu dengan alam sekitar Cilangkap. Sangat cocok untuk workshop, seminar kecil, atau rapat strategis tim Anda.
+                          </p>
+  </section>
+  <!-- Highlights Grid -->
+  <section>
+  <h4 class="text-lg font-bold text-[#102215] mb-6 flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary">verified</span>
+                              Fasilitas Unggulan
+                          </h4>
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">wifi</span>
+  <span class="text-sm font-medium">High-speed Wi-Fi</span>
+  </div>
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">ac_unit</span>
+  <span class="text-sm font-medium">Full AC</span>
+  </div>
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">surround_sound</span>
+  <span class="text-sm font-medium">Sound System</span>
+  </div>
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">draw</span>
+  <span class="text-sm font-medium">Whiteboard</span>
+  </div>
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">coffee</span>
+  <span class="text-sm font-medium">Coffee &amp; Tea</span>
+  </div>
+  <div class="flex items-center gap-3 p-4 bg-white border border-[#e0e7e1] rounded-xl hover:border-primary transition-colors">
+  <span class="material-symbols-outlined text-primary">park</span>
+  <span class="text-sm font-medium">Garden View</span>
+  </div>
+  </div>
+  </section>
+  <!-- Technical Specs -->
+  <section class="bg-primary/5 rounded-2xl p-8 border border-primary/10">
+  <h4 class="text-lg font-bold text-[#102215] mb-6">Spesifikasi Teknis</h4>
+  <div class="grid md:grid-cols-3 gap-8">
+  <div>
+  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-2">Kapasitas Maksimal</p>
+  <div class="flex items-end gap-2">
+  <span class="text-3xl font-black text-[#102215]">50</span>
+  <span class="text-sm font-medium mb-1">Peserta</span>
+  </div>
+  </div>
+  <div>
+  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-2">Luas Ruangan</p>
+  <div class="flex items-end gap-2">
+  <span class="text-3xl font-black text-[#102215]">75</span>
+  <span class="text-sm font-medium mb-1">m<sup>2</sup></span>
+  </div>
+  </div>
+  <div>
+  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-2">Konfigurasi Kursi</p>
+  <div class="flex gap-3 mt-2">
+  <div class="group relative">
+  <span class="material-symbols-outlined text-2xl text-[#61896b] hover:text-primary cursor-help">theater_comedy</span>
+  <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-[#102215] text-white text-[10px] px-2 py-1 rounded">Theater</div>
+  </div>
+  <div class="group relative">
+  <span class="material-symbols-outlined text-2xl text-[#61896b] hover:text-primary cursor-help">grid_view</span>
+  <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-[#102215] text-white text-[10px] px-2 py-1 rounded">Classroom</div>
+  </div>
+  <div class="group relative">
+  <span class="material-symbols-outlined text-2xl text-[#61896b] hover:text-primary cursor-help">square</span>
+  <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-[#102215] text-white text-[10px] px-2 py-1 rounded">U-Shape</div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- Testimonials -->
+  <section>
+  <h4 class="text-xl font-bold text-[#102215] mb-8">Apa Kata Mereka?</h4>
+  <div class="grid md:grid-cols-2 gap-6">
+  <div class="p-6 bg-white border border-[#e0e7e1] rounded-2xl shadow-sm">
+  <div class="flex gap-1 text-yellow-400 mb-4">
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  </div>
+  <p class="text-sm italic text-[#102215] mb-6">"Tempatnya sangat tenang, view tamannya bikin brainstorming jadi lebih segar. Fasilitas lengkap!"</p>
+  <div class="flex items-center gap-3">
+  <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">AD</div>
+  <div>
+  <p class="text-sm font-bold">Andi Darmawan</p>
+  <p class="text-[11px] text-[#61896b]">Corporate Secretary, TechCo</p>
+  </div>
+  </div>
+  </div>
+  <div class="p-6 bg-white border border-[#e0e7e1] rounded-2xl shadow-sm">
+  <div class="flex gap-1 text-yellow-400 mb-4">
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm">star</span>
+  <span class="material-symbols-outlined text-sm text-gray-300">star</span>
+  </div>
+  <p class="text-sm italic text-[#102215] mb-6">"Nyaman banget buat workshop seharian. Kopi dan tehnya enak, internetnya juga kencang."</p>
+  <div class="flex items-center gap-3">
+  <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">SP</div>
+  <div>
+  <p class="text-sm font-bold">Sari Putri</p>
+  <p class="text-[11px] text-[#61896b]">Freelance Educator</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+  <!-- Right Column: Booking Sidebar -->
+  <div class="lg:col-span-1">
+  <div class="sticky top-32 bg-white rounded-3xl border border-[#e0e7e1] shadow-xl p-8 space-y-8">
+  <div>
+  <p class="text-[#61896b] text-sm font-medium mb-1">Mulai Dari</p>
+  <div class="flex items-baseline gap-2">
+  <span class="text-3xl font-black text-[#102215]">Rp350.000</span>
+  <span class="text-sm font-medium text-[#61896b]">/ Jam</span>
+  </div>
+  </div>
+  <div class="space-y-4">
+  <div>
+  <label class="block text-xs font-bold text-[#102215] uppercase tracking-wider mb-2">Tanggal Booking</label>
+  <div class="relative">
+  <input class="w-full bg-[#f0f4f1] border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-sm" type="date"/>
+  </div>
+  </div>
+  <div class="grid grid-cols-2 gap-4">
+  <div>
+  <label class="block text-xs font-bold text-[#102215] uppercase tracking-wider mb-2">Jam Mulai</label>
+  <select class="w-full bg-[#f0f4f1] border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-sm">
+  <option>08:00</option>
+  <option>09:00</option>
+  <option>10:00</option>
+  </select>
+  </div>
+  <div>
+  <label class="block text-xs font-bold text-[#102215] uppercase tracking-wider mb-2">Jam Selesai</label>
+  <select class="w-full bg-[#f0f4f1] border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-sm">
+  <option>10:00</option>
+  <option>11:00</option>
+  <option>12:00</option>
+  </select>
+  </div>
+  </div>
+  </div>
+  <div class="p-4 bg-primary/10 rounded-xl">
+  <div class="flex justify-between items-center mb-2">
+  <span class="text-xs font-medium text-[#102215]">Estimasi Total (2 Jam)</span>
+  <span class="text-sm font-bold text-primary">Rp700.000</span>
+  </div>
+  <p class="text-[10px] text-[#61896b]">*Harga sudah termasuk pajak dan pemakaian fasilitas dasar.</p>
+  </div>
+  <button class="w-full bg-primary hover:bg-[#0fb838] text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/20 transition-all transform active:scale-[0.98] flex items-center justify-center gap-2">
+  <span class="material-symbols-outlined">calendar_today</span>
+                              Booking Sekarang
+                          </button>
+  <p class="text-center text-xs text-[#61896b]">Butuh durasi lebih panjang? <a class="text-primary font-bold underline" href="#">Kontak Kami</a> untuk rate khusus.</p>
+  </div>
+  </div>
+  </div>
+  <!-- Recommended Rooms -->
+  <section class="mt-24 mb-20 border-t border-[#e0e7e1] pt-16">
+  <div class="flex items-center justify-between mb-10">
+  <div>
+  <h4 class="text-2xl font-bold text-[#102215]">Ruangan Lainnya</h4>
+  <p class="text-[#61896b]">Pilihan alternatif untuk kebutuhan produktivitas Anda</p>
+  </div>
+  <button class="hidden md:flex items-center gap-2 text-primary font-bold text-sm hover:translate-x-1 transition-transform">
+                          Lihat Semua <span class="material-symbols-outlined text-sm">arrow_forward</span>
+  </button>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <!-- Room Card 1 -->
+  <div class="group cursor-pointer">
+  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200">
+  <img alt="Ruang Meeting Eksekutif" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Executive meeting room with sleek wooden table and leather chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDSs_c9ZK7ifQXm9NrK7R_1yGyRJT52jM7E0R4mOxbDA3YATKopOVAawoic1GcPykxcFei0bxIIVJYS6dyZ_AuApAhmaJs1Cc2xAWRym8i_iSSu51zz3gWfI8omBje8Q2RtN9Y45q_sT0bixswi7qBMUhAfirEEXfSm07AI5SxlVlYLyeq_9oOTXO6tF629zL791waKZrfX24r_c5goiTPZFndG_alidyDUCFGuebYs-AB58Iki7FPvPsodkMz8_YrwOJ2QHRJLhI"/>
+  </div>
+  <h5 class="font-bold text-lg group-hover:text-primary transition-colors">Ruang Meeting Eksekutif</h5>
+  <div class="flex items-center gap-4 text-xs text-[#61896b] mt-2">
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">groups</span> 12 Orang</span>
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">sell</span> Rp200.000/Jam</span>
+  </div>
+  </div>
+  <!-- Room Card 2 -->
+  <div class="group cursor-pointer">
+  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200">
+  <img alt="Coworking Space Area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Open co-working space with natural light and plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcU3l4rwDg0LgUzxtbupg4ZYGkWHkMKzadBYU9YWeqnEdpJHNhB4xgNEaX_ksU1QAjL0XF2eRz8JoppdfXnWAS1sNUGszHZDLFczQPf2SnQGc2r1F62-83Q01uhJ7zpPathCDkso3Tpr1H5y-CfBRSla_8gPFEDPi_ByPP51sDZGtMfKpFuW7Ad0P4QID-6l3KRuahqp3KP3zAOoOSrjhjnLmSUDDjVcnLQZg0u7vnfnerFfK4XWnRLX2uVv7uEqx8XsYO55QBxks"/>
+  </div>
+  <h5 class="font-bold text-lg group-hover:text-primary transition-colors">Coworking Space Area</h5>
+  <div class="flex items-center gap-4 text-xs text-[#61896b] mt-2">
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">groups</span> 20 Orang</span>
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">sell</span> Rp50.000/Hari</span>
+  </div>
+  </div>
+  <!-- Room Card 3 -->
+  <div class="group cursor-pointer">
+  <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200">
+  <img alt="Studio Mini Pembelajar" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Studio room with soundproofing and recording equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLyCwZOfSg0gCSl6vE59RcCuqNUP4KwSoRN6mLmUQ-3G8eBEd1Dr8iB76iEIskfO3id0eyfSIFCz1bziBvOJDffgw3LrF7L4yXt6roKHgfLk3TVN429_65srlxAB7RRof69RmypqJ8oCDLGv5k6fVq1UdX6SY7wKwCpK_fpz_jKzXBBxUeDE9gbZ2dH_pdhSmOW-wTGRxTbKLglwvaPkTQqlYwffIBYu3yt_u5uj5-9fs-26NdekQ6iYNMoQrdy_CVqJpzvOhFfC0"/>
+  </div>
+  <h5 class="font-bold text-lg group-hover:text-primary transition-colors">Studio Mini Pembelajar</h5>
+  <div class="flex items-center gap-4 text-xs text-[#61896b] mt-2">
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">groups</span> 5 Orang</span>
+  <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">sell</span> Rp150.000/Jam</span>
+  </div>
+  </div>
+  </div>
+  </section>
+  </main>
+  <Footer />
+</Main>

@@ -1,17 +1,144 @@
 ---
 import '../styles/global.css';
-const { content } = Astro.props;
+const { title = "Rumah Pembelajar Cilangkap" } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="id">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<title>{content.title}</title>
+		<meta name="generator" content={Astro.generator} />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-background-light text-[#111813] font-display transition-colors duration-300">
 		<slot />
+
+		<!-- Global Lightbox Modal -->
+		<div id="global-lightbox" class="fixed inset-0 z-[100] bg-black/95 items-center justify-center hidden opacity-0 transition-opacity duration-300">
+			<button id="gl-close" class="absolute top-6 right-6 text-white hover:text-primary transition-colors p-2 z-50">
+				<span class="material-symbols-outlined text-4xl">close</span>
+			</button>
+			
+			<div class="relative w-full max-w-6xl mx-auto flex items-center justify-between px-4 h-full">
+				<button id="gl-prev" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white text-white hover:text-black flex items-center justify-center backdrop-blur-sm transition-colors z-50">
+					<span class="material-symbols-outlined">arrow_back_ios_new</span>
+				</button>
+				
+				<div class="relative flex-1 h-[80vh] flex flex-col items-center justify-center mx-4">
+					<img id="gl-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95" />
+					<h4 id="gl-title" class="text-white font-bold text-2xl mt-6 text-center tracking-wide"></h4>
+					<p id="gl-counter" class="text-white/60 text-sm mt-2 font-mono"></p>
+				</div>
+				
+				<button id="gl-next" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white text-white hover:text-black flex items-center justify-center backdrop-blur-sm transition-colors z-50">
+					<span class="material-symbols-outlined">arrow_forward_ios</span>
+				</button>
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const openBtns = document.querySelectorAll('.open-gallery-btn');
+				const lightbox = document.getElementById('global-lightbox');
+				const lbImg = document.getElementById('gl-img');
+				const lbTitle = document.getElementById('gl-title');
+				const lbCounter = document.getElementById('gl-counter');
+				const btnClose = document.getElementById('gl-close');
+				const btnPrev = document.getElementById('gl-prev');
+				const btnNext = document.getElementById('gl-next');
+
+				let currentImages = [];
+				let currentIndex = 0;
+
+				openBtns.forEach(btn => {
+					btn.addEventListener('click', (e) => {
+						// Find closest gallery container. Usually it's the wrapper of the grid
+						const container = btn.closest('.grid.mb-12') || document.querySelector('.grid.mb-12') || document.body;
+						const imgs = Array.from(container.querySelectorAll('img'));
+						
+						currentImages = imgs.map(img => ({
+							src: img.src,
+							alt: img.alt || 'Foto Ruangan'
+						}));
+
+						if(currentImages.length > 0) {
+							// Determine which image was clicked based on DOM structure
+							// If button is strictly sibling/child of one img, we could find that index. By default open the first thumbnail or Main img
+							currentIndex = 0; 
+							openLightbox(currentIndex);
+						}
+					});
+				});
+
+				function openLightbox(index) {
+					if(!lightbox || currentImages.length === 0) return;
+					currentIndex = index;
+					const imgData = currentImages[currentIndex];
+					
+					lbImg.src = imgData.src;
+					lbImg.alt = imgData.alt;
+					lbTitle.textContent = imgData.alt;
+					lbCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
+					
+					lightbox.classList.remove('hidden');
+					// delay to allow display block to apply before opacity animation
+					setTimeout(() => {
+						lightbox.classList.remove('opacity-0');
+						lightbox.classList.add('opacity-100');
+						lbImg.classList.remove('scale-95');
+						lbImg.classList.add('scale-100');
+					}, 10);
+					document.body.style.overflow = 'hidden';
+				}
+
+				function closeLightbox() {
+					if(!lightbox) return;
+					lightbox.classList.remove('opacity-100');
+					lightbox.classList.add('opacity-0');
+					lbImg.classList.remove('scale-100');
+					lbImg.classList.add('scale-95');
+					
+					setTimeout(() => {
+						lightbox.classList.add('hidden');
+					}, 300);
+					document.body.style.overflow = '';
+				}
+
+				function showNext() {
+					if(currentImages.length === 0) return;
+					currentIndex = (currentIndex + 1) % currentImages.length;
+					openLightbox(currentIndex);
+				}
+
+				function showPrev() {
+					if(currentImages.length === 0) return;
+					currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+					openLightbox(currentIndex);
+				}
+
+				if (btnClose) btnClose.addEventListener('click', closeLightbox);
+				if (btnNext) btnNext.addEventListener('click', showNext);
+				if (btnPrev) btnPrev.addEventListener('click', showPrev);
+
+				if (lightbox) {
+					lightbox.addEventListener('click', (e) => {
+						if (e.target === lightbox || e.target.closest('.flex-1') === e.target) {
+							closeLightbox();
+						}
+					});
+				}
+
+				document.addEventListener('keydown', (e) => {
+					if (lightbox && !lightbox.classList.contains('hidden')) {
+						if (e.key === 'Escape') closeLightbox();
+						if (e.key === 'ArrowRight') showNext();
+						if (e.key === 'ArrowLeft') showPrev();
+					}
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -1,26 +1,154 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Main from '../layouts/main.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<Main title="Rumah Pembelajar Cilangkap | Ketenangan Berpadu dengan Produktivitas">
+  <Navbar activePage="home" />
+  <main>
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-[85vh] flex items-center justify-center px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
+    <img alt="Garden Venue" class="w-full h-full object-cover" data-alt="Lush tropical garden with wooden architecture and modern glass windows" src="/images/home/hero.webp"/>
+    </div>
+    <div class="relative z-20 max-w-4xl text-center flex flex-col items-center gap-8">
+    <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30 text-white text-sm font-medium">
+    <span class="material-symbols-outlined text-sm">location_on</span> Jakarta Timur
+                    </div>
+    <h1 class="text-white text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight">
+                        Ketenangan Berpadu dengan Produktivitas
+                    </h1>
+    <p class="text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed">
+                        Ruang serbaguna asri untuk meeting, pelatihan, dan gathering dengan nuansa 'homey' yang menyegarkan pikiran.
+                    </p>
+    <div class="flex flex-col sm:flex-row gap-4 mt-4">
+    <a class="bg-primary text-[#111813] px-8 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-transform shadow-xl flex items-center justify-center gap-2" href="/facilities">
+                            Lihat Fasilitas <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+    <a class="bg-white text-[#111813] px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-100 transition-colors shadow-xl" href="/contact">
+                            Reservasi Sekarang
+                        </a>
+    </div>
+    </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 px-6 bg-white" id="tentang">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div class="relative">
+    <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+    <img alt="Interior" class="w-full h-full object-cover" data-alt="Cozy interior design with wooden elements and plants" src="/images/home/about.webp"/>
+    </div>
+    <div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl shadow-xl hidden md:block">
+    <p class="text-3xl font-black text-[#111813]">100+</p>
+    <p class="text-sm font-bold opacity-80 uppercase tracking-wider">Acara Sukses</p>
+    </div>
+    </div>
+    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-4">
+    <span class="text-primary font-bold tracking-widest uppercase text-sm">Tentang Kami</span>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[#111813] leading-tight">
+                                Ruang Ideal untuk Ide Besar Anda
+                            </h2>
+    <p class="text-lg text-[#61896b] leading-relaxed">
+                                Rumah Pembelajar Cilangkap adalah lokasi ideal untuk acara profesional dan komunitas dengan suasana 'homey' yang asri di Jakarta Timur. Kami percaya bahwa lingkungan yang tenang dapat memicu kreativitas dan produktivitas yang lebih tinggi.
+                            </p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6">
+    <div class="flex gap-4 items-start p-4 bg-background-light rounded-xl border border-[#dbe6de]">
+    <div class="bg-primary/20 p-3 rounded-lg text-primary">
+    <span class="material-symbols-outlined">psychology</span>
+    </div>
+    <div>
+    <h4 class="font-bold text-[#111813]">Fokus &amp; Tenang</h4>
+    <p class="text-sm text-[#61896b]">Jauh dari hiruk pikuk kota, mendukung konsentrasi penuh.</p>
+    </div>
+    </div>
+    <div class="flex gap-4 items-start p-4 bg-background-light rounded-xl border border-[#dbe6de]">
+    <div class="bg-primary/20 p-3 rounded-lg text-primary">
+    <span class="material-symbols-outlined">groups</span>
+    </div>
+    <div>
+    <h4 class="font-bold text-[#111813]">Koneksi</h4>
+    <p class="text-sm text-[#61896b]">Ruang yang intim mempererat hubungan tim &amp; komunitas.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Facilities Section -->
+    <section class="py-24 px-6 bg-background-light" id="fasilitas">
+    <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+    <div class="max-w-2xl">
+    <span class="text-primary font-bold tracking-widest uppercase text-sm">Fasilitas Unggulan</span>
+    <h2 class="text-4xl font-extrabold text-[#111813] mt-2">Didesain untuk Kenyamanan &amp; Efisiensi</h2>
+    </div>
+    <p class="text-[#61896b] max-w-sm">
+                            Setiap sudut ruangan kami dirancang untuk mendukung berbagai kebutuhan acara Anda, mulai dari diskusi formal hingga gathering santai.
+                        </p>
+    </div>
+    <!-- Gallery Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-12">
+        <!-- Main Photo -->
+        <div class="lg:col-span-3 aspect-[16/9] overflow-hidden rounded-xl bg-gray-200 group relative">
+            <img alt="Ruang Serbaguna" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="/images/facilities/rs-main.webp" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 text-white max-w-lg">
+                <span class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-sm">Fasilitas Unggulan</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-3 drop-shadow-md">Ruang Serbaguna</h2>
+            </div>
+        </div>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+        <!-- Thumbnail Photos -->
+        <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+            <div class="aspect-square rounded-xl overflow-hidden bg-gray-200">
+                <img alt="Executive Meeting Room" class="w-full h-full object-cover transition duration-300 hover:scale-110" src="/images/facilities/rm2-main.webp" />
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden bg-gray-200 relative group cursor-pointer">
+                <img alt="Intimate Meeting" class="w-full h-full object-cover transition duration-300 group-hover:scale-110" src="/images/facilities/rm1-main.webp" />
+                <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity open-gallery-btn z-10">
+                    <span class="material-symbols-outlined text-white mb-2">collections</span>
+                    <span class="text-white font-bold tracking-wide text-center px-4">Lihat Foto Lainnya</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Photos for Lightbox -->
+        <img alt="Main Deck Outdoor" class="hidden" src="/images/facilities/ao1-main.webp" />
+        <img alt="Collaborative Space" class="hidden" src="/images/facilities/rm3-main.webp" />
+        <img alt="Intimate Garden" class="hidden" src="/images/facilities/ao2-main.webp" />
+        <img alt="Patio & Event Space" class="hidden" src="/images/facilities/ao3-main.webp" />
+    </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-24 px-6 bg-background-dark text-white overflow-hidden relative" id="kontak">
+    <div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+    <span class="material-symbols-outlined text-[400px]">eco</span>
+    </div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Siap Menggelar Acara Anda?</h2>
+    <p class="text-lg text-white/70 mb-12 max-w-2xl mx-auto">
+                        Hubungi tim kami untuk konsultasi layout, ketersediaan jadwal, atau kunjungan lokasi di Cilangkap, Jakarta Timur.
+                    </p>
+    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+    <button class="bg-primary text-[#111813] px-10 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3 hover:scale-105 transition-transform shadow-2xl">
+    <span class="material-symbols-outlined">chat</span> Hubungi via WhatsApp
+                        </button>
+    <button class="bg-transparent border-2 border-white/30 hover:bg-white/10 text-white px-10 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3 transition-colors">
+    <span class="material-symbols-outlined">mail</span> Kirim Email
+                        </button>
+    </div>
+    </div>
+    </section>
+    </main>
+  <Footer />
+  <!-- Floating Action Button -->
+    <a class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" href="#">
+    <svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.747-2.874-2.512-2.96-2.626-.087-.115-.708-.941-.708-1.793 0-.852.448-1.271.607-1.446.159-.175.347-.22.463-.22s.231.001.332.005c.109.004.258-.041.405.31.159.379.542 1.321.59 1.416.047.095.078.206.014.329-.064.127-.096.209-.191.32-.096.111-.199.248-.285.333-.095.094-.195.197-.084.387.111.19.493.812 1.061 1.315.732.648 1.35.849 1.54.944.19.095.302.079.414-.047.111-.127.476-.554.603-.744.127-.19.254-.159.429-.095.175.064 1.111.524 1.302.619.19.095.318.143.365.222.048.079.048.46-.095.865z"></path>
+    </svg>
+    </a>
+</Main>

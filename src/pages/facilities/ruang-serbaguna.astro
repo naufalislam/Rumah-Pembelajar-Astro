@@ -1,0 +1,225 @@
+---
+import Main from '../../layouts/main.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Main title="Ruang Serbaguna (Multifunction Hall) - Rumah Pembelajar Cilangkap">
+  <Navbar activePage="facilities" />
+  <main class="flex-1 max-w-7xl mx-auto w-full px-6 lg:px-20 py-8">
+  <!-- Breadcrumbs -->
+  <nav class="flex items-center gap-2 text-sm text-[#61896b] mb-8">
+  <a class="hover:text-primary transition-colors" href="/">Home</a>
+  <span class="material-symbols-outlined text-xs">chevron_right</span>
+  <a class="hover:text-primary transition-colors" href="/facilities">Facilities</a>
+  <span class="material-symbols-outlined text-xs">chevron_right</span>
+  <span class="font-semibold text-[#102215]">Ruang Serbaguna</span>
+  </nav>
+
+  <!-- Gallery Section -->
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-12">
+  <div class="lg:col-span-3 aspect-[16/9] overflow-hidden rounded-xl bg-gray-200 group relative">
+  <img alt="Ruang Serbaguna" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="/images/facilities/rs-main.webp" />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <div class="absolute bottom-6 left-6 text-white max-w-lg">
+  <span class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-sm">Multifunction Hall</span>
+  <h2 class="text-3xl md:text-4xl font-extrabold mt-3 drop-shadow-md">Ruang Serbaguna</h2>
+  </div>
+  </div>
+  <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200">
+  <img alt="Detail Ruangan 1" class="w-full h-full object-cover transition duration-300 hover:scale-110" src="/images/facilities/rs-detail1.webp" />
+  </div>
+  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200 relative group cursor-pointer">
+  <img alt="Detail Ruangan 2" class="w-full h-full object-cover transition duration-300 group-hover:scale-110" src="/images/facilities/rm1-detail1.webp" />
+  <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity open-gallery-btn z-10">
+  <span class="material-symbols-outlined text-white mb-2">collections</span>
+  <span class="text-white font-bold tracking-wide text-center px-4">Lihat Foto Lainnya</span>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Content Grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+  <!-- Left Column: Details -->
+  <div class="lg:col-span-2 space-y-12">
+  
+  <!-- Description -->
+  <section class="max-w-3xl">
+  <h3 class="text-2xl font-bold text-[#102215] mb-5 flex items-center gap-2">
+    <span class="material-symbols-outlined text-primary">info</span>
+    Tentang Ruangan
+  </h3>
+  <p class="text-[#4b6354] leading-relaxed text-lg bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+      Suasana <span class="text-primary font-semibold italic">'homey'</span> yang asri namun tetap profesional untuk produktivitas maksimal. Ruangan ini dirancang dengan konsep semi-outdoor berdinding kaca yang menyatu dengan alam sekitar Cilangkap. Merupakan ruangan kami yang paling fleksibel bak blank canvas; sangat cocok untuk workshop, seminar kelas, rapat strategis berskala besar, hingga sesi komunitas seperti Line Dance.
+  </p>
+  </section>
+
+  <!-- Highlights Grid -->
+  <section>
+  <h4 class="text-xl font-bold text-[#102215] mb-6 flex items-center gap-2">
+  <span class="material-symbols-outlined text-primary">stars</span>
+      Fasilitas Unggulan
+  </h4>
+  <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+  <div class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
+  <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+    <span class="material-symbols-outlined text-xl">wifi</span>
+  </div>
+  <span class="text-xs font-semibold text-center text-[#102215]">High-speed Wi-Fi</span>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
+  <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+    <span class="material-symbols-outlined text-xl">ac_unit</span>
+  </div>
+  <span class="text-xs font-semibold text-center text-[#102215]">Full AC</span>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
+  <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+    <span class="material-symbols-outlined text-xl">surround_sound</span>
+  </div>
+  <span class="text-xs font-semibold text-center text-[#102215]">Sound System</span>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
+  <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+    <span class="material-symbols-outlined text-xl">videocam</span>
+  </div>
+  <span class="text-xs font-semibold text-center text-[#102215]">Proyektor</span>
+  </div>
+  <div class="flex flex-col items-center justify-center gap-2 p-4 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
+  <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+    <span class="material-symbols-outlined text-xl">park</span>
+  </div>
+  <span class="text-xs font-semibold text-center text-[#102215]">Garden View</span>
+  </div>
+  </div>
+  <p class="text-xs text-gray-500 mt-2">*Proyektor tersedia khusus untuk Setup Meeting.</p>
+  </section>
+
+  <!-- Technical Specs -->
+  <section class="bg-gradient-to-br from-primary/10 to-transparent rounded-3xl p-8 border border-primary/20 relative overflow-hidden">
+  <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none">
+    <span class="material-symbols-outlined text-[200px]">festival</span>
+  </div>
+  <h4 class="text-xl font-bold text-[#102215] mb-6 relative z-10">Ringkasan Ruangan</h4>
+  <div class="grid grid-cols-2 gap-8 relative z-10">
+  <div class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white">
+  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1">Kapasitas Maksimal</p>
+  <div class="flex items-end gap-2 text-primary">
+  <span class="text-4xl font-black">50</span>
+  <span class="text-sm font-bold mb-1">Orang</span>
+  </div>
+  </div>
+  <div class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white">
+  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1">Konfigurasi</p>
+  <div class="flex items-center gap-2 mt-2">
+  <span class="material-symbols-outlined text-primary">dashboard_customize</span>
+  <span class="text-sm font-bold text-[#102215]">Custom Setup</span>
+  </div>
+  </div>
+  </div>
+  </section>
+  </div>
+
+  <!-- Right Column: Booking Sidebar -->
+  <div class="lg:col-span-1">
+  <div class="sticky top-32 bg-white rounded-3xl border border-[#e0e7e1] shadow-2xl shadow-gray-200/50 p-8 space-y-6">
+  
+  <div class="pb-4 border-b border-gray-100">
+    <p class="text-[#61896b] text-sm font-bold uppercase tracking-wider mb-4">Pilih Setup Ruangan</p>
+    <!-- Setup Tabs -->
+    <div class="flex flex-col gap-2" id="setup-tabs">
+      <button class="setup-tab group relative flex items-center justify-between p-3 rounded-xl border-2 border-primary bg-primary/5 transition-all text-left" data-price="300000" data-period="Jam">
+        <div>
+          <span class="block font-bold text-sm text-[#102215] group-hover:text-primary">Setup Meeting</span>
+          <span class="block text-xs text-[#61896b]">16 - 20 Orang</span>
+        </div>
+        <span class="material-symbols-outlined text-primary check-icon">check_circle</span>
+      </button>
+      <button class="setup-tab group relative flex items-center justify-between p-3 rounded-xl border border-gray-200 hover:border-primary/50 hover:bg-gray-50 transition-all text-left" data-price="400000" data-period="Jam">
+        <div>
+          <span class="block font-bold text-sm text-[#102215] group-hover:text-primary">Setup Ruang Kelas</span>
+          <span class="block text-xs text-[#61896b]">Hingga 50 Orang</span>
+        </div>
+        <span class="material-symbols-outlined text-gray-300 check-icon hidden">check_circle</span>
+      </button>
+      <button class="setup-tab group relative flex items-center justify-between p-3 rounded-xl border border-gray-200 hover:border-primary/50 hover:bg-gray-50 transition-all text-left" data-price="250000" data-period="2 Jam">
+        <div>
+          <span class="block font-bold text-sm text-[#102215] group-hover:text-primary">Line Dance / Olahraga</span>
+          <span class="block text-xs text-[#61896b]">Sesi Khusus</span>
+        </div>
+        <span class="material-symbols-outlined text-gray-300 check-icon hidden">check_circle</span>
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <p class="text-[#61896b] text-sm font-bold uppercase tracking-wider mb-2">Harga Estimasi</p>
+    <div class="flex items-baseline gap-2">
+    <span class="text-4xl font-black text-[#102215]" id="price-display">Rp300.000</span>
+    <span class="text-sm font-bold text-[#61896b]" id="period-display">/ Jam</span>
+    </div>
+  </div>
+
+  <button class="w-full bg-primary hover:bg-[#0fb838] text-white font-bold py-4 rounded-xl shadow-[0_8px_20px_rgba(25,185,73,0.3)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 text-lg">
+  <span class="material-symbols-outlined">calendar_month</span>
+      Booking Sekarang
+  </button>
+  <p class="text-center text-xs text-[#61896b]">Butuh durasi lebih panjang? <a class="text-primary font-bold underline" href="#">Hubungi Admin</a></p>
+  </div>
+  </div>
+  </div>
+  </main>
+  <Footer />
+</Main>
+
+<script>
+  const tabs = document.querySelectorAll('.setup-tab');
+  const priceDisplay = document.getElementById('price-display');
+  const periodDisplay = document.getElementById('period-display');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active classes
+      tabs.forEach(t => {
+        t.classList.remove('border-2', 'border-primary', 'bg-primary/5');
+        t.classList.add('border', 'border-gray-200', 'hover:border-primary/50', 'hover:bg-gray-50');
+        const icon = t.querySelector('.check-icon');
+        icon.classList.remove('text-primary');
+        icon.classList.add('text-gray-300', 'hidden');
+        icon.textContent = 'circle';
+      });
+
+      // Add active classes to clicked
+      tab.classList.remove('border', 'border-gray-200', 'hover:border-primary/50', 'hover:bg-gray-50');
+      tab.classList.add('border-2', 'border-primary', 'bg-primary/5');
+      const icon = tab.querySelector('.check-icon');
+      icon.classList.remove('text-gray-300', 'hidden');
+      icon.classList.add('text-primary');
+      icon.textContent = 'check_circle';
+
+      // Update price
+      const price = tab.getAttribute('data-price');
+      const period = tab.getAttribute('data-period');
+      
+      const formattedPrice = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      }).format(price);
+
+      if (priceDisplay && periodDisplay) {
+        priceDisplay.textContent = formattedPrice;
+        periodDisplay.textContent = `/ ${period}`;
+        
+        // Add minimal animation
+        priceDisplay.classList.remove('scale-110', 'text-primary');
+        void priceDisplay.offsetWidth; // trigger reflow
+        priceDisplay.classList.add('scale-110', 'text-primary');
+        setTimeout(() => priceDisplay.classList.remove('scale-110', 'text-primary'), 300);
+      }
+    });
+  });
+</script>

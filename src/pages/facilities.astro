@@ -1,0 +1,184 @@
+---
+import Main from '../layouts/main.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Main title="Fasilitas & Ruang Meeting - Rumah Pembelajar Cilangkap">
+  <Navbar activePage="facilities" />
+  <main class="flex-1">
+    <!-- Hero Section -->
+    <section class="px-4 md:px-10 lg:px-40 py-12">
+    <div class="mx-auto max-w-[1200px]">
+    <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-10 group">
+    <img alt="Rumah Pembelajar Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Pemandangan interior modern rumah pembelajar yang asri" src="/images/facilities/header.webp"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-12">
+    <h1 class="text-white text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Pilih Ruang yang Sesuai dengan Kebutuhan Anda</h1>
+    <p class="text-white/90 text-lg max-w-2xl font-medium">Lingkungan tenang, asri, dan produktif di jantung Cilangkap. Dirancang untuk kolaborasi dan fokus maksimal.</p>
+    </div>
+    </div>
+    
+    <!-- Rooms Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1: Ruang Meeting 1 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Ruang Meeting 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/rm1-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Intimate Space</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Rp150K <span class="text-[10px] opacity-80 uppercase tracking-wider">/Jam</span></div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 6 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">light_mode</span> Terang</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Ruang Meeting 1</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Ruangan berdesain modern yang dirancang khusus untuk diskusi intensif dan rapat tim kecil.</p>
+    <a href="/facilities/ruang-meeting-1" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 2: Ruang Meeting 2 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Ruang Meeting 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/rm2-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Executive Room</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Rp200K <span class="text-[10px] opacity-80 uppercase tracking-wider">/Jam</span></div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 8 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">lock</span> Privat</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Ruang Meeting 2</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Hadirkan wibawa dalam setiap pertemuan Anda. Ruang diskusi premium dengan interior klasik.</p>
+    <a href="/facilities/ruang-meeting-2" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 3: Ruang Meeting 3 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Ruang Meeting 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/rm3-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Collaborative Space</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Rp150K <span class="text-[10px] opacity-80 uppercase tracking-wider">/Jam</span></div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 10 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">draw</span> Fungsional</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Ruang Meeting 3</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Ruangan kolaboratif yang fungsional dan nyaman untuk mengakomodasi diskusi tim menengah.</p>
+    <a href="/facilities/ruang-meeting-3" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 4: Area Outdoor 1 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Area Outdoor 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/ao1-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Main Deck</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Custom Rate</div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 30 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">deck</span> Deck Kayu</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Area Outdoor 1</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Ruang terbuka komunal yang luas menyatu alam. Cocok untuk gathering atau event komunitas.</p>
+    <a href="/facilities/area-outdoor-1" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 5: Area Outdoor 2 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Area Outdoor 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/ao2-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Intimate Garden</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Custom Rate</div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 10 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">nature</span> Santai</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Area Outdoor 2</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Sudut hijau asri dan tenang, ideal untuk obrolan intim dan melepas penat kelompok kecil.</p>
+    <a href="/facilities/area-outdoor-2" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 6: Area Outdoor 3 -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group">
+    <div class="relative h-64 overflow-hidden">
+    <img alt="Area Outdoor 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="/images/facilities/ao3-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Patio / Semi-Outdoor</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Custom Rate</div>
+    </div>
+    <div class="p-6 flex flex-col h-[280px]">
+    <div class="flex items-center gap-4 mb-3">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> 20 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">dashboard_customize</span> Fleksibel</div>
+    </div>
+    <h3 class="text-xl font-bold text-[#111813] mb-2">Area Outdoor 3</h3>
+    <p class="text-[#61896b] text-sm leading-relaxed mb-6 flex-grow">Area semi-outdoor serbaguna, cocok untuk sesi breakout atau bersantai bersama tim.</p>
+    <a href="/facilities/area-outdoor-3" class="w-full py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2 mt-auto">Lihat Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+
+    <!-- Card 7: Ruang Serbaguna -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-[#e2e8e3] hover:shadow-xl transition-shadow group lg:col-span-3">
+    <div class="flex flex-col md:flex-row h-full">
+    <div class="relative w-full md:w-1/2 min-h-[300px] md:h-auto overflow-hidden">
+    <img alt="Ruang Serbaguna" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="/images/facilities/rs-main.webp"/>
+    <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-primary border border-primary/20">Multifunction Hall</div>
+    <div class="absolute bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-xl font-bold shadow-lg">Mulai Rp250K <span class="text-[10px] opacity-80 uppercase tracking-wider">/2 Jam</span></div>
+    </div>
+    <div class="p-8 w-full md:w-1/2 flex flex-col justify-center">
+    <div class="flex items-center gap-4 mb-4">
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">groups</span> Hingga 50 Orang</div>
+    <div class="flex items-center gap-1 text-[#61896b] text-sm font-semibold"><span class="material-symbols-outlined text-lg">star</span> Sangat Fleksibel</div>
+    </div>
+    <h3 class="text-2xl font-bold text-[#111813] mb-3">Ruang Serbaguna</h3>
+    <p class="text-[#61896b] text-base leading-relaxed mb-8 flex-grow">Pilihan paling fleksibel bak blank canvas. Sangat cocok untuk workshop, seminar berskala besar, rapat strategis, hingga sesi komunitas seperti Line Dance. Hadir dengan panorama taman Cilangkap.</p>
+    <a href="/facilities/ruang-serbaguna" class="w-max px-8 py-3 bg-[#f0f4f1] hover:bg-primary hover:text-white text-[#111813] font-bold rounded-xl transition-all flex items-center justify-center gap-2">Cek Setup & Detail <span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Location Section -->
+    <section class="bg-white px-4 md:px-10 lg:px-40 py-20">
+    <div class="mx-auto max-w-[1200px] grid md:grid-cols-2 gap-12 items-center">
+    <div>
+    <span class="text-primary font-bold tracking-widest uppercase text-xs">Lokasi Kami</span>
+    <h2 class="text-3xl font-extrabold text-[#111813] mt-2 mb-6">Temukan Ketenangan di Cilangkap</h2>
+    <p class="text-[#61896b] mb-8 leading-relaxed">Berlokasi strategis namun jauh dari hiruk-pikuk kebisingan kota. Rumah Pembelajar Cilangkap menawarkan akses mudah dengan lingkungan yang tetap asri dan hijau untuk mendukung kreativitas Anda.</p>
+    <div class="space-y-4">
+    <div class="flex items-start gap-4">
+    <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+    <div>
+    <p class="font-bold text-[#111813]">Alamat</p>
+    <p class="text-[#61896b] text-sm">Jl. Cilangkap Raya No. 45, Jakarta Timur</p>
+    </div>
+    </div>
+    <div class="flex items-start gap-4">
+    <span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+    <div>
+    <p class="font-bold text-[#111813]">Telepon</p>
+    <p class="text-[#61896b] text-sm">+62 21 1234 5678</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden h-[400px] shadow-2xl relative w-full">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6417428301743!2d106.9096533755202!3d-6.310707161758696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6a890493cb%3A0xbd7dea8c3e631d1f!2sRumah%20Pembelajar%20Cilangkap!5e0!3m2!1sen!2sid!4v1772604598737!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    </section>
+    </main>
+  <Footer />
+</Main>

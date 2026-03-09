@@ -1,0 +1,23 @@
+---
+const { activePage } = Astro.props;
+---
+<header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-[#dbe6de] px-6 lg:px-20 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center">
+        <a href="/">
+            <img src="/Asset 1.png" alt="Rumah Pembelajar Cilangkap" class="h-10 md:h-12 w-auto object-contain" />
+        </a>
+    </div>
+    <nav class="hidden md:flex items-center gap-10">
+    <a class={`text-[#111813] text-sm font-semibold hover:text-primary transition-colors ${activePage === 'home' ? 'text-primary' : ''}`} href="/">Beranda</a>
+    <a class={`text-[#111813] text-sm font-semibold hover:text-primary transition-colors ${activePage === 'about' ? 'text-primary' : ''}`} href="/about">Tentang</a>
+    <a class={`text-[#111813] text-sm font-semibold hover:text-primary transition-colors ${activePage === 'facilities' ? 'text-primary' : ''}`} href="/facilities">Fasilitas</a>
+    <a class={`text-[#111813] text-sm font-semibold hover:text-primary transition-colors ${activePage === 'contact' ? 'text-primary' : ''}`} href="/contact">Kontak</a>
+    </nav>
+    <div class="flex items-center gap-4">
+    <a href="/contact" class="bg-primary hover:bg-primary/90 text-[#111813] px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm">
+                        Hubungi Kami
+    </a>
+    </div>
+    </div>
+    </header>
