@@ -1,149 +1,263 @@
 ---
-import Main from '../../layouts/main.astro';
-import Navbar from '../../components/Navbar.astro';
-import Footer from '../../components/Footer.astro';
+import Main from "../../layouts/main.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
 ---
 
 <Main title="Ruang Meeting 2 (Executive Room) - Rumah Pembelajar Cilangkap">
   <Navbar activePage="facilities" />
   <main class="flex-1 max-w-7xl mx-auto w-full px-6 lg:px-20 py-8">
-  <!-- Breadcrumbs -->
-  <nav class="flex items-center gap-2 text-sm text-[#61896b] mb-8">
-  <a class="hover:text-primary transition-colors" href="/">Home</a>
-  <span class="material-symbols-outlined text-xs">chevron_right</span>
-  <a class="hover:text-primary transition-colors" href="/facilities">Facilities</a>
-  <span class="material-symbols-outlined text-xs">chevron_right</span>
-  <span class="font-semibold text-[#102215]">Ruang Meeting 2</span>
-  </nav>
+    <!-- Breadcrumbs -->
+    <nav class="flex items-center gap-2 text-sm text-[#61896b] mb-8">
+      <a class="hover:text-primary transition-colors" href="/">Home</a>
+      <span class="material-symbols-outlined text-xs">chevron_right</span>
+      <a class="hover:text-primary transition-colors" href="/facilities"
+        >Facilities</a
+      >
+      <span class="material-symbols-outlined text-xs">chevron_right</span>
+      <span class="font-semibold text-[#102215]">Ruang Meeting 2</span>
+    </nav>
 
-  <!-- Gallery Section -->
-  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-12">
-  <div class="lg:col-span-3 aspect-[16/9] overflow-hidden rounded-xl bg-gray-200 group relative">
-  <img alt="Ruang Meeting 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="/images/facilities/rm2-main.webp" />
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-  <div class="absolute bottom-6 left-6 text-white max-w-lg">
-  <span class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-sm">Executive Room</span>
-  <h2 class="text-3xl md:text-4xl font-extrabold mt-3 drop-shadow-md">Ruang Meeting 2</h2>
-  </div>
-  </div>
-  <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
-  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200">
-  <img alt="Detail Ruangan 1" class="w-full h-full object-cover transition duration-300 hover:scale-110" src="/images/facilities/rm2-detail1.webp" />
-  </div>
-  <div class="aspect-square rounded-xl overflow-hidden bg-gray-200 relative group cursor-pointer">
-  <img alt="Detail Ruangan 2" class="w-full h-full object-cover transition duration-300 group-hover:scale-110" src="/images/facilities/rm2-detail2.webp" />
-  <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity open-gallery-btn z-10">
-  <span class="material-symbols-outlined text-white mb-2">collections</span>
-  <span class="text-white font-bold tracking-wide text-center px-4">Lihat Foto Lainnya</span>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  <!-- Content Grid -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-  <!-- Left Column: Details -->
-  <div class="lg:col-span-2 space-y-12">
-  
-  <!-- Description -->
-  <section class="max-w-3xl">
-  <h3 class="text-2xl font-bold text-[#102215] mb-5 flex items-center gap-2">
-    <span class="material-symbols-outlined text-primary">info</span>
-    Tentang Ruangan
-  </h3>
-  <p class="text-[#4b6354] leading-relaxed text-lg bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-      Hadirkan wibawa dalam setiap pertemuan Anda. Ruang diskusi premium ini menawarkan <span class="text-primary font-semibold">privasi ekstra</span> dengan interior klasik dan hangat. Sangat ideal untuk board meeting, pertemuan direksi, atau menjamu klien penting. Suasana yang eksklusif memastikan setiap keputusan strategis dapat didiskusikan dengan tenang dan nyaman.
-  </p>
-  </section>
-
-  <!-- Highlights Grid -->
-  <section>
-  <h4 class="text-xl font-bold text-[#102215] mb-6 flex items-center gap-2">
-  <span class="material-symbols-outlined text-primary">stars</span>
-      Fasilitas Rekomendasi
-  </h4>
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-  <div class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
-  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
-    <span class="material-symbols-outlined">wifi</span>
-  </div>
-  <span class="text-sm font-semibold text-center text-[#102215]">High-speed Wi-Fi</span>
-  </div>
-  <div class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
-  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
-    <span class="material-symbols-outlined">ac_unit</span>
-  </div>
-  <span class="text-sm font-semibold text-center text-[#102215]">Full AC</span>
-  </div>
-  <div class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
-  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
-    <span class="material-symbols-outlined">table_restaurant</span>
-  </div>
-  <span class="text-sm font-semibold text-center text-[#102215]">Round Table</span>
-  </div>
-  <div class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group">
-  <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary">
-    <span class="material-symbols-outlined">lock</span>
-  </div>
-  <span class="text-sm font-semibold text-center text-[#102215]">Private & Quiet</span>
-  </div>
-  </div>
-  </section>
-
-  <!-- Technical Specs -->
-  <section class="bg-gradient-to-br from-primary/10 to-transparent rounded-3xl p-8 border border-primary/20 relative overflow-hidden">
-  <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none">
-    <span class="material-symbols-outlined text-[200px]">chair</span>
-  </div>
-  <h4 class="text-xl font-bold text-[#102215] mb-6 relative z-10">Ringkasan Ruangan</h4>
-  <div class="grid grid-cols-2 gap-8 relative z-10">
-  <div class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white">
-  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1">Kapasitas Maksimal</p>
-  <div class="flex items-end gap-2 text-primary">
-  <span class="text-4xl font-black">8</span>
-  <span class="text-sm font-bold mb-1">Orang</span>
-  </div>
-  </div>
-  <div class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white">
-  <p class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1">Tema / Nuansa</p>
-  <div class="flex items-center gap-2 mt-2">
-  <span class="material-symbols-outlined text-primary">gavel</span>
-  <span class="text-sm font-bold text-[#102215]">Klasik Eksklusif</span>
-  </div>
-  </div>
-  </div>
-  </section>
-  </div>
-
-  <!-- Right Column: Booking Sidebar -->
-  <div class="lg:col-span-1">
-  <div class="sticky top-32 bg-white rounded-3xl border border-[#e0e7e1] shadow-2xl shadow-gray-200/50 p-8 space-y-8">
-  <div class="pb-6 border-b border-gray-100">
-  <p class="text-[#61896b] text-sm font-bold uppercase tracking-wider mb-2">Harga Sewa</p>
-  <div class="flex items-baseline gap-2">
-  <span class="text-4xl font-black text-[#102215]">Rp200.000</span>
-  <span class="text-sm font-bold text-[#61896b]">/ Jam</span>
-  </div>
-  </div>
-
-  <div class="space-y-4">
-  <div class="bg-[#f8faf9] p-4 rounded-xl flex items-start gap-4 border border-gray-100">
-    <span class="material-symbols-outlined text-primary mt-1">room_service</span>
-    <div>
-        <p class="font-bold text-sm text-[#102215]">Layanan Premium</p>
-        <p class="text-xs text-[#61896b] mt-1">Privasi lebih tinggi untuk mendukung diskusi yang konfidensial.</p>
+    <!-- Gallery Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mb-12">
+      <div
+        class="lg:col-span-3 aspect-[16/9] overflow-hidden rounded-xl bg-gray-200 group relative"
+      >
+        <img
+          alt="Ruang Meeting 2"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="/images/facilities/rm2-main.webp"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+        >
+        </div>
+        <div class="absolute bottom-6 left-6 text-white max-w-lg">
+          <span
+            class="bg-primary px-3 py-1 rounded text-xs font-bold uppercase tracking-widest shadow-sm"
+            >Executive Room</span
+          >
+          <h2 class="text-3xl md:text-4xl font-extrabold mt-3 drop-shadow-md">
+            Ruang Meeting 2
+          </h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+        <div class="aspect-square rounded-xl overflow-hidden bg-gray-200">
+          <img
+            alt="Detail Ruangan 1"
+            class="w-full h-full object-cover transition duration-300 hover:scale-110"
+            src="/images/facilities/rm2-detail1.webp"
+          />
+        </div>
+        <div
+          class="aspect-square rounded-xl overflow-hidden bg-gray-200 relative group cursor-pointer"
+        >
+          <img
+            alt="Detail Ruangan 2"
+            class="w-full h-full object-cover transition duration-300 group-hover:scale-110"
+            src="/images/facilities/rm2-detail2.webp"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity open-gallery-btn z-10"
+          >
+            <span class="material-symbols-outlined text-white mb-2"
+              >collections</span
+            >
+            <span class="text-white font-bold tracking-wide text-center px-4"
+              >Lihat Foto Lainnya</span
+            >
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
 
-  <button class="w-full bg-primary hover:bg-[#0fb838] text-white font-bold py-4 rounded-xl shadow-[0_8px_20px_rgba(25,185,73,0.3)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 text-lg">
-  <span class="material-symbols-outlined">calendar_month</span>
-      Booking Sekarang
-  </button>
-  <p class="text-center text-xs text-[#61896b]">Butuh durasi lebih panjang? <a class="text-primary font-bold underline" href="#">Hubungi Admin</a></p>
-  </div>
-  </div>
-  </div>
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- Left Column: Details -->
+      <div class="lg:col-span-2 space-y-12">
+        <!-- Description -->
+        <section class="max-w-3xl">
+          <h3
+            class="text-2xl font-bold text-[#102215] mb-5 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-primary">info</span>
+            Tentang Ruangan
+          </h3>
+          <p
+            class="text-[#4b6354] leading-relaxed text-lg bg-white p-6 rounded-2xl shadow-sm border border-gray-100"
+          >
+            Hadirkan wibawa dalam setiap pertemuan Anda. Ruang diskusi premium
+            ini menawarkan <span class="text-primary font-semibold"
+              >privasi ekstra</span
+            > dengan interior klasik dan hangat. Sangat ideal untuk board meeting,
+            pertemuan direksi, atau menjamu klien penting. Suasana yang eksklusif
+            memastikan setiap keputusan strategis dapat didiskusikan dengan tenang
+            dan nyaman.
+          </p>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section>
+          <h4
+            class="text-xl font-bold text-[#102215] mb-6 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined text-primary">stars</span>
+            Fasilitas Rekomendasi
+          </h4>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div
+              class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary"
+              >
+                <span class="material-symbols-outlined">wifi</span>
+              </div>
+              <span class="text-sm font-semibold text-center text-[#102215]"
+                >High-speed Wi-Fi</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary"
+              >
+                <span class="material-symbols-outlined">ac_unit</span>
+              </div>
+              <span class="text-sm font-semibold text-center text-[#102215]"
+                >Full AC</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary"
+              >
+                <span class="material-symbols-outlined">table_restaurant</span>
+              </div>
+              <span class="text-sm font-semibold text-center text-[#102215]"
+                >Round Table</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-3 p-5 bg-white border border-[#e0e7e1] rounded-2xl hover:border-primary hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors text-primary"
+              >
+                <span class="material-symbols-outlined">lock</span>
+              </div>
+              <span class="text-sm font-semibold text-center text-[#102215]"
+                >Private & Quiet</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Specs -->
+        <section
+          class="bg-gradient-to-br from-primary/10 to-transparent rounded-3xl p-8 border border-primary/20 relative overflow-hidden"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none"
+          >
+            <span class="material-symbols-outlined text-[200px]">chair</span>
+          </div>
+          <h4 class="text-xl font-bold text-[#102215] mb-6 relative z-10">
+            Ringkasan Ruangan
+          </h4>
+          <div class="grid grid-cols-2 gap-8 relative z-10">
+            <div
+              class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white"
+            >
+              <p
+                class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1"
+              >
+                Kapasitas Maksimal
+              </p>
+              <div class="flex items-end gap-2 text-primary">
+                <span class="text-4xl font-black">8</span>
+                <span class="text-sm font-bold mb-1">Orang</span>
+              </div>
+            </div>
+            <div
+              class="bg-white/60 backdrop-blur rounded-xl p-4 border border-white"
+            >
+              <p
+                class="text-xs font-bold uppercase tracking-widest text-[#61896b] mb-1"
+              >
+                Tema / Nuansa
+              </p>
+              <div class="flex items-center gap-2 mt-2">
+                <span class="material-symbols-outlined text-primary">gavel</span
+                >
+                <span class="text-sm font-bold text-[#102215]"
+                  >Klasik Eksklusif</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Booking Sidebar -->
+      <div class="lg:col-span-1">
+        <div
+          class="sticky top-32 bg-white rounded-3xl border border-[#e0e7e1] shadow-2xl shadow-gray-200/50 p-8 space-y-8"
+        >
+          <div class="pb-6 border-b border-gray-100">
+            <p
+              class="text-[#61896b] text-sm font-bold uppercase tracking-wider mb-2"
+            >
+              Harga Sewa
+            </p>
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl font-black text-[#102215]">Rp200.000</span>
+              <span class="text-sm font-bold text-[#61896b]">/ Jam</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="bg-[#f8faf9] p-4 rounded-xl flex items-start gap-4 border border-gray-100"
+            >
+              <span class="material-symbols-outlined text-primary mt-1"
+                >room_service</span
+              >
+              <div>
+                <p class="font-bold text-sm text-[#102215]">Layanan Premium</p>
+                <p class="text-xs text-[#61896b] mt-1">
+                  Privasi lebih tinggi untuk mendukung diskusi yang
+                  konfidensial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/+6285117814407?text=Halo%20saya%20tertarik%20menyewa%20ruang%20meeting%20ini."
+          >
+            <button
+              class="w-full bg-primary hover:bg-[#0fb838] text-white font-bold py-4 rounded-xl shadow-[0_8px_20px_rgba(25,185,73,0.3)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 text-lg"
+            >
+              <span class="material-symbols-outlined">calendar_month</span>
+              Booking Sekarang
+            </button>
+          </a>
+          <br />
+
+          <p class="text-center text-xs text-[#61896b]">
+            Butuh durasi lebih panjang? <a
+              class="text-primary font-bold underline"
+              href="https://wa.me/+6285117814407">Hubungi Admin</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
   <Footer />
 </Main>

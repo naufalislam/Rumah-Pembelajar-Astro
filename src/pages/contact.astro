@@ -1,7 +1,7 @@
 ---
-import Main from '../layouts/main.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
+import Main from "../layouts/main.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Main title="Kontak & Reservasi - Rumah Pembelajar Cilangkap">
@@ -9,76 +9,109 @@ import Footer from '../components/Footer.astro';
   <main class="max-w-7xl mx-auto px-4 md:px-20 py-12">
     <!-- Hero Section -->
     <div class="mb-12">
-    <h2 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111813] mb-4">Kontak Kami</h2>
-    
+      <h2
+        class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-[#111813] mb-4"
+      >
+        Kontak Kami
+      </h2>
     </div>
     <div class="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
-    <!-- Reservation Form Section -->
-    
-    <!-- Contact Details & Map Section -->
-    <div class="space-y-8">
-    <!-- Direct Contact Cards -->
-    <div class="space-y-4">
-    <h3 class="text-xl font-bold text-[#111813]">Hubungi Kami Langsung</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-    <a class="group flex items-center gap-4 p-4 bg-white border border-[#dbe6de] rounded-xl hover:border-primary transition-all" href="https://wa.me/628123456789">
-    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
-    <span class="material-symbols-outlined">chat</span>
+      <!-- Reservation Form Section -->
+
+      <!-- Contact Details & Map Section -->
+      <div class="space-y-8">
+        <!-- Direct Contact Cards -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-[#111813]">
+            Hubungi Kami Langsung
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+            <a
+              class="group flex items-center gap-4 p-4 bg-white border border-[#dbe6de] rounded-xl hover:border-primary transition-all"
+              href="https://wa.me/+6285117814407"
+            >
+              <div
+                class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"
+              >
+                <span class="material-symbols-outlined">chat</span>
+              </div>
+              <div>
+                <p
+                  class="text-xs font-bold text-[#61896b] uppercase tracking-wider"
+                >
+                  WhatsApp
+                </p>
+                <p class="font-bold text-[#111813]">+62 851-1781-4407</p>
+              </div>
+            </a>
+            <a
+              class="group flex items-center gap-4 p-4 bg-white border border-[#dbe6de] rounded-xl hover:border-primary transition-all"
+              href="https://www.instagram.com/rumahpembelajarcilangkap/"
+            >
+              <div
+                class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"
+              >
+                <span class="material-symbols-outlined">photo_camera</span>
+              </div>
+              <div>
+                <p
+                  class="text-xs font-bold text-[#61896b] uppercase tracking-wider"
+                >
+                  Instagram
+                </p>
+                <p class="font-bold text-[#111813]">
+                  @rumahpembelajarcilangkap
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Operational Hours -->
+        <div class="bg-white p-6 rounded-xl border border-[#dbe6de]">
+          <h3 class="font-bold text-[#111813] mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">schedule</span>
+            Jam Operasional
+          </h3>
+          <div class="space-y-3 text-sm">
+            <div
+              class="flex justify-between items-center border-b border-[#f0f4f1] pb-2"
+            >
+              <span class="text-[#61896b]">Senin - Jumat</span>
+              <span class="font-bold">08:00 - 17:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center border-b border-[#f0f4f1] pb-2"
+            >
+              <span class="text-[#61896b]">Sabtu</span>
+              <span class="font-bold">09:00 - 15:00</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-[#61896b]">Minggu &amp; Hari Libur</span>
+              <span class="text-red-500 font-bold">Tutup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Map -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-[#111813]">Lokasi Kami</h3>
+          <div
+            class="relative w-full aspect-square md:aspect-video lg:aspect-square bg-slate-200 rounded-xl overflow-hidden border border-[#dbe6de] group"
+          >
+            <!-- Map Placeholder -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6417428301743!2d106.9096533755202!3d-6.310707161758696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6a890493cb%3A0xbd7dea8c3e631d1f!2sRumah%20Pembelajar%20Cilangkap!5e0!3m2!1sen!2sid!4v1772604598737!5m2!1sen!2sid"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-    <p class="text-xs font-bold text-[#61896b] uppercase tracking-wider">WhatsApp</p>
-    <p class="font-bold text-[#111813]">+62 812 3456 789</p>
-    </div>
-    </a>
-    <a class="group flex items-center gap-4 p-4 bg-white border border-[#dbe6de] rounded-xl hover:border-primary transition-all" href="#">
-    <div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
-    <span class="material-symbols-outlined">photo_camera</span>
-    </div>
-    <div>
-    <p class="text-xs font-bold text-[#61896b] uppercase tracking-wider">Instagram</p>
-    <p class="font-bold text-[#111813]">@rumahpembelajarcilangkap</p>
-    </div>
-    </a>
-    </div>
-    </div>
-    <!-- Location Map -->
-    <div class="space-y-4">
-    <h3 class="text-xl font-bold text-[#111813]">Lokasi Kami</h3>
-    <div class="relative w-full aspect-square md:aspect-video lg:aspect-square bg-slate-200 rounded-xl overflow-hidden border border-[#dbe6de] group">
-    <!-- Map Placeholder -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6417428301743!2d106.9096533755202!3d-6.310707161758696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed6a890493cb%3A0xbd7dea8c3e631d1f!2sRumah%20Pembelajar%20Cilangkap!5e0!3m2!1sen!2sid!4v1772604598737!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="flex items-start gap-3 p-4 bg-primary/5 rounded-xl border border-primary/10">
-    <span class="material-symbols-outlined text-primary mt-0.5">map</span>
-    <div class="text-sm">
-    <p class="font-bold text-[#111813]">Alamat:</p>
-    <p class="text-[#61896b]">Jl. Raya Cilangkap No. 12, Kel. Cilangkap, Kec. Cipayung, Jakarta Timur, 13870</p>
-    </div>
-    </div>
-    </div>
-    <!-- Operational Hours -->
-    <div class="bg-white p-6 rounded-xl border border-[#dbe6de]">
-    <h3 class="font-bold text-[#111813] mb-4 flex items-center gap-2">
-    <span class="material-symbols-outlined text-primary">schedule</span>
-                            Jam Operasional
-                        </h3>
-    <div class="space-y-3 text-sm">
-    <div class="flex justify-between items-center border-b border-[#f0f4f1] pb-2">
-    <span class="text-[#61896b]">Senin - Jumat</span>
-    <span class="font-bold">08:00 - 17:00</span>
-    </div>
-    <div class="flex justify-between items-center border-b border-[#f0f4f1] pb-2">
-    <span class="text-[#61896b]">Sabtu</span>
-    <span class="font-bold">09:00 - 15:00</span>
-    </div>
-    <div class="flex justify-between items-center">
-    <span class="text-[#61896b]">Minggu &amp; Libur</span>
-    <span class="text-red-500 font-bold">Tutup</span>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </main>
+  </main>
   <Footer />
 </Main>
